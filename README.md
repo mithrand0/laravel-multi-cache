@@ -6,12 +6,12 @@ An example use is to have an array cache and Redis cache. Fetch items from the a
 
 ## Installation
 ```
-composer require tmd/laravel-multi-cache
+composer require partechgss/laravel-multi-cache
 ```
 
 Add this to your config/app.php `providers` array:
 ```php
-Tmd\LaravelMultiCache\MultiStoreServiceProvider::class
+Partechgss\LaravelMultiCache\MultiStoreServiceProvider::class
 ```
 
 Add the `multi` store to your `config/cache.php` `stores` array:

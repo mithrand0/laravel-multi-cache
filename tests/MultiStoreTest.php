@@ -1,14 +1,13 @@
 <?php
 
-namespace Tmd\LaravelRepositories\Tests;
+namespace PartechGSS\LaravelRepositories\Tests;
 
-use Cache;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Cache\ArrayStore;
 use Illuminate\Cache\CacheManager;
-use Illuminate\Contracts\Cache\Store;
 use Orchestra\Testbench\TestCase;
-use Tmd\LaravelMultiCache\MultiStore;
-use Tmd\LaravelMultiCache\MultiStoreServiceProvider;
+use PartechGSS\LaravelMultiCache\MultiStore;
+use PartechGSS\LaravelMultiCache\MultiStoreServiceProvider;
 
 class MultiStoreTest extends TestCase
 {
@@ -49,7 +48,7 @@ class MultiStoreTest extends TestCase
         ];
     }
 
-    public function tearDown()
+    protected function tearDown(): void
     {
         $this->getPrimaryStore()->flush();
         $this->getSecondaryStore()->flush();

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tmd\LaravelMultiCache;
+namespace PartechGSS\LaravelMultiCache;
 
 use Exception;
 use Illuminate\Cache\CacheManager;
